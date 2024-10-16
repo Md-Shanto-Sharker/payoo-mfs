@@ -15,7 +15,7 @@ document.getElementById('btn-add-money').addEventListener('click',function(event
         console.log(typeof balance);
 
 
-        const newBalance = Number(balance) +Number(addMoneyInput);
+        const newBalance = parseFloat(balance) + parseFloat(addMoneyInput);
         console.log(newBalance);
 
         document.getElementById('account-balance').innerText=newBalance
